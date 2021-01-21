@@ -185,6 +185,7 @@ function ci_rp2_setup {
 function ci_rp2_build {
     make ${MAKEOPTS} -C mpy-cross
     git submodule update --init lib/pico-sdk
+    git -C lib/pico-sdk submodule update --init lib/tinyusb
     make ${MAKEOPTS} -C ports/rp2
 }
 
