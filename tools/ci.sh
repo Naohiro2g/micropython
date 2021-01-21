@@ -183,6 +183,7 @@ function ci_rp2_setup {
 }
 
 function ci_rp2_build {
+    make ${MAKEOPTS} -C mpy-cross
     git submodule update --init lib/pico-sdk
     make ${MAKEOPTS} -C ports/rp2
 }
