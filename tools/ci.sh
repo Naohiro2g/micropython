@@ -176,6 +176,18 @@ function ci_qemu_arm_build {
 }
 
 ########################################################################################
+# ports/rp2
+
+function ci_rp2_setup {
+    ci_gcc_arm_setup
+}
+
+function ci_rp2_build {
+    git submodule update --init lib/pico-sdk
+    make ${MAKEOPTS} -C ports/rp2
+}
+
+########################################################################################
 # ports/samd
 
 function ci_samd_setup {
