@@ -73,6 +73,7 @@
 
 // Fine control over Python builtins, classes, modules, etc
 #define MICROPY_PY_FUNCTION_ATTRS               (1)
+#define MICROPY_PY_BUILTINS_STR_UNICODE         (1)
 #define MICROPY_PY_BUILTINS_MEMORYVIEW          (1)
 #define MICROPY_PY_BUILTINS_ROUND_INT           (1)
 #define MICROPY_PY_ALL_SPECIAL_METHODS          (1)
